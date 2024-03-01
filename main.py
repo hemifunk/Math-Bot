@@ -1,8 +1,8 @@
 from telegram import ReplyKeyboardMarkup
-from telegram.ext import Application, CommandHandler, ConversationHandler
+from telegram.ext import Application, CommandHandler, ConversationHandler, PicklePersistence
 from consts import START_MENU_KEYBOARD, TOKEN
 from logger import setup_logger
-from utils import utils_features_handlers
+from program import utils_features_handlers
 
 
 main_logger = setup_logger("main_logger")
@@ -22,15 +22,12 @@ async def start(update, context):
 def main():
 
     main_logger.info("Bot started!")
+    
+    persistence = PicklePersistence(filepath=r"C:\Users\User\OneDrive\MathBotProject\Math-Bot\data_math_bot.txt")
+    app = Application.builder().token(TOKEN).persistence(persistence).build()
 
-    # Create the Application and pass it the bot token.
-    app = Application.builder().token(TOKEN).build()
 
-    # on different commands - answer in Telegram
     app.add_handlers(utils_features_handlers)
-    # app.add_handlers(todolist_features_handlers)
-    # app.add_handlers(shopping_features_handlers)
-    # app.add_handlers(resturants_features_handlers)
     app.add_handler(CommandHandler("start", start))
 
     app.run_polling()

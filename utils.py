@@ -1,19 +1,27 @@
-from telegram import InlineKeyboardMarkup, ReplyKeyboardMarkup
-from telegram.ext import (ConversationHandler, CallbackQueryHandler, 
-                          MessageHandler, CommandHandler, filters)
+from telegram import InlineKeyboardButton
 
-from consts import TOPIC_MENU_KEYBOARD
 
-async def motion_problem(update, context): 
-    
-    topic = update.message.text
+def create_keyboard(buttons_list):
 
-    reply_markup = InlineKeyboardMarkup(TOPIC_MENU_KEYBOARD)
+    keyboard = [[InlineKeyboardButton(button, callback_data=button)]
+                for button in buttons_list]
 
-    await update.message.reply_text(f"*יאללה {topic}, איך לעזור?*", 
-                                    reply_markup=reply_markup, parse_mode='Markdown')
-    return ConversationHandler.END
+    return group_buttons(keyboard)
 
-motion_problems_handler = MessageHandler(filters.Regex("בעיות תנועה"), motion_problem)
 
-utils_features_handlers = [motion_problems_handler]
+
+def group_buttons(buttons_list):
+    result = []
+    current_group = []
+
+    for button in buttons_list:
+        current_group.extend(button)
+
+        if len(current_group) == 2:
+            result.append(current_group)
+            current_group = []
+
+    if current_group:
+        result.append(current_group)
+
+    return result

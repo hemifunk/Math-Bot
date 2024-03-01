@@ -1,27 +1,19 @@
-from telegram import InlineKeyboardButton, KeyboardButton
+from utils import create_keyboard
 
 TOKEN = "6835045984:AAFs2I3CG7xxHEeTkVNsfjYFRy1PnYgsVGg"
 
-START_MENU_KEYBOARD = [
-        [
-        KeyboardButton("פונקציית מנה"),
-        KeyboardButton("פונקציית שורש"),
-        KeyboardButton("פונקציית טריגו")
-        ],
-        [
-        KeyboardButton("בעיות תנועה"),
-        KeyboardButton("בעיות קיצון"),
-        KeyboardButton("סדרות")
-        ],
-        [
-        KeyboardButton("הסתברות"),
-        KeyboardButton("גיאומטריה"),
-        KeyboardButton("טריגונומטריה")
-        ]
+TOPICS = [
+    "בעיות תנועה", "פונקציית מנה", "פונקציית שורש",
+    "פונקציית טריגו", "הסתברות", "סדרות", 
+    "בעיות תנועה", "טריגונומטריה", "גיאומטריה"
 ]
 
-TOPIC_MENU_KEYBOARD =    [[InlineKeyboardButton("שיעורים מוקלטים", callback_data="videos"),
-                          InlineKeyboardButton("הצטרפות לקהילה", callback_data="community")],
-                          [InlineKeyboardButton("תוכנית למידה", callback_data="planning"),
-                          InlineKeyboardButton("בחינות עבר", callback_data="exams")]
-                          ]
+TOPICS_REGEX_PATTERN = "|".join(TOPICS)
+
+TOPIC_OPTIONS = [
+    "שיעורים מוקלטים", "הצטרפות לקהילה", "תוכנית למידה", "בחינות עבר"
+]
+
+START_MENU_KEYBOARD = create_keyboard(TOPICS)
+
+TOPIC_OPTIONS_KEYBOARD = create_keyboard(TOPIC_OPTIONS)
