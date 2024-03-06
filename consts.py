@@ -93,3 +93,29 @@ RATIONALS_FUNCTIONS_LESSONS =  """*שיעור 1 – חוקי נגזרות:*\n ht
 *שיעור 5 – אסימפטוטות של פונקציית מנה:*\n https://vimeo.com/498742280?share=copy\n
 *שיעור 6 – חקירת פונקציית מנה:*\n https://vimeo.com/496648963?share=copy\n"""
 
+
+WORD_PROBLEMS_COMMUNITY = "https://t.me/+MzSKd_zCy6RjZjRk"
+
+
+TRIGONOMETRY_FUNCTIONS_COMMUNITY = "https://t.me/+DD5zCpY7ds1lN2Y8"
+
+
+ROOT_FUNCTIONS_COMMUNITY = "https://t.me/+meUrJgeRK1M4MWY0"
+
+
+RATIONALS_FUNCTIONS_COMMUNITY = "https://t.me/+vsOqZ-TemPdmODQ0"    
+
+
+SERIES_COMMUNITY = "https://t.me/+micA-c8i3NZkNjBk"
+
+
+GEOMETRY_COMMUNITY = "https://t.me/+IWFu9KUd3PQ0MDM0"
+
+
+TRIGONOMETRY_COMMUNITY = "https://t.me/+pLkwLfPtzhVkZWFk"
+
+
+PROPABILITY_COMMUNITY = "https://t.me/+O0TZmFkosco2YWFk"
+
+
+INTEGRALS_COMMUNITY = "https://t.me/+SBCz8iYpXlY3Nzk0"
