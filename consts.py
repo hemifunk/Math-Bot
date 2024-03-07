@@ -119,3 +119,31 @@ PROPABILITY_COMMUNITY = "https://t.me/+O0TZmFkosco2YWFk"
 
 
 INTEGRALS_COMMUNITY = "https://t.me/+SBCz8iYpXlY3Nzk0"
+
+
+PROPABILITY_PROGRAM = "https://drive.google.com/file/d/17BK4CB2NMcd_Q43NfdccfOPE793SsUYP/view?usp=sharing"
+
+
+TRIGONOMETRY_PROGRAM = "https://drive.google.com/file/d/1DRAmcVSg-O67WCJg-9OraDBI7a4gy-07/view?usp=sharing"
+
+
+ROOT_FUNCTIONS_PROGRAM = "https://drive.google.com/file/d/1JYX6fCfqoZ3JmxzsnpMFK-d4IA-7Pavj/view?usp=sharing"
+
+
+RATIONALS_FUNCTIONS_PROGRAM = "https://drive.google.com/file/d/1giOPgWPW81_0j2LbtZIi7cGFxCL85Ycq/view?usp=sharing"
+
+
+SERIES_PROGRAM = "https://drive.google.com/file/d/1Ey1VTUppfyqeXZ1pzPn__u0VX1P5WssR/view?usp=sharing"
+
+
+GEOMETRY_PROGRAM = "https://drive.google.com/file/d/1ZYWPwSlsRU5KMja6A_5NzkmnByrrBJTg/view?usp=sharing"
+
+
+TRIGONOMETRY_FUNCTIONS_PROGRAM = "https://drive.google.com/file/d/1iVRnorbj813Et4LfQq8Qd1m_l2wgorh5/view?usp=sharing"
+
+
+WORD_PROBLEMS_PROGRAM = "https://drive.google.com/file/d/1p1H2x-vdMk-vehw0sjbneoMhz3kCwhgs/view?usp=sharing"
+
+
+INTEGRALS_PROGRAM = "https://drive.google.com/file/d/1xufHYJNfAVmUi-5M3aqkA54ZQ7zM0pdk/view?usp=sharing"
+
