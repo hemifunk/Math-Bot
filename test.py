@@ -1,14 +1,13 @@
 import unittest
 from unittest.mock import Mock, patch
 from telegram.ext import ConversationHandler
-
 from unittest.mock import AsyncMock, MagicMock
+
 from utils import create_keyboard, group_buttons
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from consts import TOPIC_OPTIONS_KEYBOARD, PAST_EXAMS
+from program import lessons_videos, communities, study_program, show_topic_options, past_exams
 
-
-from consts import TOPIC_OPTIONS_KEYBOARD
-from program import lessons_videos, communities, study_program, show_topic_options
 
 class TestKeyboardUtils(unittest.TestCase):
     def test_create_keyboard(self):
@@ -47,6 +46,7 @@ class TestShowTopicOptions(unittest.TestCase):
             parse_mode='Markdown'
         )
 
+
 class TestBotFunctions(unittest.TestCase):
     @patch('telegram.Update')
     @patch('telegram.ext.CallbackContext')
@@ -74,6 +74,21 @@ class TestBotFunctions(unittest.TestCase):
         result = await study_program(mock_update, mock_context)
         self.assertEqual(result, ConversationHandler.END)
         mock_update.callback_query.message.reply_text.assert_called_once()
+
+
+class TestPastExams(unittest.TestCase):
+    def setUp(self):
+        self.update = AsyncMock()
+        self.context = MagicMock()
+
+    async def test_past_exams(self):
+        self.update.callback_query.message.reply_text = AsyncMock()
+
+        result = await past_exams(self.update, self.context)
+
+        self.update.callback_query.message.reply_text.assert_called_once_with(
+            text=PAST_EXAMS)
+        self.assertEqual(result, ConversationHandler.END)
 
 
 if __name__ == '__main__':
