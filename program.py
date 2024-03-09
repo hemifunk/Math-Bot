@@ -4,7 +4,7 @@ from telegram.ext import (ConversationHandler, CallbackQueryHandler,
 
 from consts import (GEOMETRY_COMMUNITY, GEOMETRY_LESSONS, GEOMETRY_PROGRAM,
                     INTEGRALS_COMMUNITY,
-                    INTEGRALS_LESSONS, PROPABILITY_COMMUNITY,
+                    INTEGRALS_LESSONS, PAST_EXAMS, PROPABILITY_COMMUNITY,
                     PROPABILITY_LESSONS,
                     RATIONALS_FUNCTIONS_COMMUNITY,
                     RATIONALS_FUNCTIONS_LESSONS,
@@ -73,7 +73,7 @@ async def lessons_videos(update, context):
         text = RATIONALS_FUNCTIONS_LESSONS
     
         
-    await update.callback_query.message.reply_text(text = text)
+    await update.callback_query.message.reply_text(text = text, parse_mode='Markdown')
     return ConversationHandler.END
 
 
@@ -148,13 +148,28 @@ async def study_program(update, context):
     return ConversationHandler.END
 
 
+async def past_exams(update, context): 
+        
+    text = PAST_EXAMS
+        
+    await update.callback_query.message.reply_text(text = text)
+    return ConversationHandler.END
+
+
+callback_handlers = [CallbackQueryHandler(lessons_videos, pattern='^שיעורים מוקלטים$'), 
+                    CallbackQueryHandler(communities, pattern='^הצטרפות לקהילה$'),
+                    CallbackQueryHandler(study_program, pattern='^תוכנית למידה$'),
+                    CallbackQueryHandler(past_exams, pattern='^בחינות עבר$')]
+
+
 topic_conversation_handler = ConversationHandler(
     entry_points=[
         MessageHandler(filters.Regex(TOPICS_REGEX_PATTERN), show_topic_options)
     ],
     states={CHOOSE_OPTION: [CallbackQueryHandler(lessons_videos, pattern='^שיעורים מוקלטים$'), 
                             CallbackQueryHandler(communities, pattern='^הצטרפות לקהילה$'),
-                            CallbackQueryHandler(study_program, pattern='^תוכנית למידה$')]},
+                            CallbackQueryHandler(study_program, pattern='^תוכנית למידה$'),
+                            CallbackQueryHandler(past_exams, pattern='^בחינות עבר$')]},
     fallbacks=[],
     name="math",
     persistent=True,
@@ -164,6 +179,7 @@ topic_conversation_handler = ConversationHandler(
 utils_features_handlers = [topic_conversation_handler,
                            CallbackQueryHandler(lessons_videos, pattern='^שיעורים מוקלטים$'),
                            CallbackQueryHandler(communities, pattern='^הצטרפות לקהילה$'),
-                           CallbackQueryHandler(study_program, pattern='^תוכנית למידה$')]
+                           CallbackQueryHandler(study_program, pattern='^תוכנית למידה$'),
+                           CallbackQueryHandler(past_exams, pattern='^בחינות עבר$')]
 
 

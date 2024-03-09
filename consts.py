@@ -147,3 +147,9 @@ WORD_PROBLEMS_PROGRAM = "https://drive.google.com/file/d/1p1H2x-vdMk-vehw0sjbneo
 
 INTEGRALS_PROGRAM = "https://drive.google.com/file/d/1xufHYJNfAVmUi-5M3aqkA54ZQ7zM0pdk/view?usp=sharing"
 
+
+PAST_EXAMS = """קיץ 2022: https://drive.google.com/file/d/1y95iihq-oO0qBFoeCRQsCcGL_SYYahMJ/view?usp=drive_link\n
+קיץ 2022 מועד ב: https://drive.google.com/file/d/1Hn6p2DczQQ6gvxwJ-JoPFiN8nIs_OnDf/view?usp=sharing\n
+קיץ 2023: https://drive.google.com/file/d/1YgwTK09M8VhHMklj76EPGO3_pzy_Bjpa/view?usp=sharing\n
+קיץ 2023 מועד ב: https://drive.google.com/file/d/17-l2-x8VkItrM8yHA3z3O5ZFA2GbPxs-/view?usp=sharing\n
+חורף 2023: https://drive.google.com/file/d/1RfZU3YXQZCVE8b0UBGHHjIPCn3F6zzUO/view?usp=sharing"""
