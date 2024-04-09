@@ -93,3 +93,63 @@ RATIONALS_FUNCTIONS_LESSONS =  """*שיעור 1 – חוקי נגזרות:*\n ht
 *שיעור 5 – אסימפטוטות של פונקציית מנה:*\n https://vimeo.com/498742280?share=copy\n
 *שיעור 6 – חקירת פונקציית מנה:*\n https://vimeo.com/496648963?share=copy\n"""
 
+
+WORD_PROBLEMS_COMMUNITY = "https://t.me/+MzSKd_zCy6RjZjRk"
+
+
+TRIGONOMETRY_FUNCTIONS_COMMUNITY = "https://t.me/+DD5zCpY7ds1lN2Y8"
+
+
+ROOT_FUNCTIONS_COMMUNITY = "https://t.me/+meUrJgeRK1M4MWY0"
+
+
+RATIONALS_FUNCTIONS_COMMUNITY = "https://t.me/+vsOqZ-TemPdmODQ0"    
+
+
+SERIES_COMMUNITY = "https://t.me/+micA-c8i3NZkNjBk"
+
+
+GEOMETRY_COMMUNITY = "https://t.me/+IWFu9KUd3PQ0MDM0"
+
+
+TRIGONOMETRY_COMMUNITY = "https://t.me/+pLkwLfPtzhVkZWFk"
+
+
+PROPABILITY_COMMUNITY = "https://t.me/+O0TZmFkosco2YWFk"
+
+
+INTEGRALS_COMMUNITY = "https://t.me/+SBCz8iYpXlY3Nzk0"
+
+
+PROPABILITY_PROGRAM = "https://drive.google.com/file/d/17BK4CB2NMcd_Q43NfdccfOPE793SsUYP/view?usp=sharing"
+
+
+TRIGONOMETRY_PROGRAM = "https://drive.google.com/file/d/1DRAmcVSg-O67WCJg-9OraDBI7a4gy-07/view?usp=sharing"
+
+
+ROOT_FUNCTIONS_PROGRAM = "https://drive.google.com/file/d/1JYX6fCfqoZ3JmxzsnpMFK-d4IA-7Pavj/view?usp=sharing"
+
+
+RATIONALS_FUNCTIONS_PROGRAM = "https://drive.google.com/file/d/1giOPgWPW81_0j2LbtZIi7cGFxCL85Ycq/view?usp=sharing"
+
+
+SERIES_PROGRAM = "https://drive.google.com/file/d/1Ey1VTUppfyqeXZ1pzPn__u0VX1P5WssR/view?usp=sharing"
+
+
+GEOMETRY_PROGRAM = "https://drive.google.com/file/d/1ZYWPwSlsRU5KMja6A_5NzkmnByrrBJTg/view?usp=sharing"
+
+
+TRIGONOMETRY_FUNCTIONS_PROGRAM = "https://drive.google.com/file/d/1iVRnorbj813Et4LfQq8Qd1m_l2wgorh5/view?usp=sharing"
+
+
+WORD_PROBLEMS_PROGRAM = "https://drive.google.com/file/d/1p1H2x-vdMk-vehw0sjbneoMhz3kCwhgs/view?usp=sharing"
+
+
+INTEGRALS_PROGRAM = "https://drive.google.com/file/d/1xufHYJNfAVmUi-5M3aqkA54ZQ7zM0pdk/view?usp=sharing"
+
+
+PAST_EXAMS = """קיץ 2022: https://drive.google.com/file/d/1y95iihq-oO0qBFoeCRQsCcGL_SYYahMJ/view?usp=drive_link\n
+קיץ 2022 מועד ב: https://drive.google.com/file/d/1Hn6p2DczQQ6gvxwJ-JoPFiN8nIs_OnDf/view?usp=sharing\n
+קיץ 2023: https://drive.google.com/file/d/1YgwTK09M8VhHMklj76EPGO3_pzy_Bjpa/view?usp=sharing\n
+קיץ 2023 מועד ב: https://drive.google.com/file/d/17-l2-x8VkItrM8yHA3z3O5ZFA2GbPxs-/view?usp=sharing\n
+חורף 2023: https://drive.google.com/file/d/1RfZU3YXQZCVE8b0UBGHHjIPCn3F6zzUO/view?usp=sharing"""
