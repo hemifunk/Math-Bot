@@ -1,3 +1,4 @@
+
 # MathBot
 
 > MathBot is a telegram bot for helping high school final exams - specified in 5 points in Math (for the Israeli program of MOE).
@@ -18,3 +19,6 @@
 * [ ] Just Write /start to the bot.
 * [ ] Select the topic you would like to learn about.
 * [ ] Select between the several options how would you like to learn - Videos, files, exams and more...
+
+This code is rechecked. 
+
